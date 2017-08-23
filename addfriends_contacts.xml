@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <Button
+        android:text="@string/fb"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_facebook"
+        android:background="@drawable/button_border2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#d8d8d8"/>
+    <Button
+        android:text="@string/contacts"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_contacts"
+        android:background="@drawable/button_border2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+
+        />
+
+    <TextView
+        android:text="@string/enable_access"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_facebook"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="124dp"
+        android:id="@+id/textView19"
+        android:textColor="#000000"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:text="@string/enable_device"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView19"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:id="@+id/textView20"
+        android:textColor="#d8d8d8"
+        android:textSize="15sp"/>
+
+    <Button
+        android:text="@string/addfriends_button"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="86dp"
+        android:id="@+id/button6"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#000000"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        />
+
+
+</RelativeLayout>

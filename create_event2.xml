@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/create_event_bg">
+
+
+    <TextView
+        android:text="@string/step_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView8"
+        android:textStyle="normal"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:layout_alignBottom="@+id/textView7"
+        android:layout_toRightOf="@+id/textView7"
+        android:layout_toEndOf="@+id/textView7"
+        android:layout_marginRight="33dp"/>
+
+    <TextView
+        android:text="@string/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView7"
+        android:layout_alignLeft="@+id/textView7"
+        android:layout_alignStart="@+id/textView7"
+        android:layout_marginTop="20dp"
+        android:id="@+id/textView9"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+
+        android:hint="@string/location_hint"
+        android:ems="10"
+        android:layout_below="@+id/textView9"
+        android:layout_alignLeft="@+id/textView9"
+        android:layout_alignStart="@+id/textView9"
+        android:layout_marginTop="15dp"
+        android:id="@+id/location_edittext"
+        android:background="#ffffff"
+        android:cursorVisible="true"
+        android:textCursorDrawable="@null"
+        android:textSize="15sp"
+        android:textColor="#333333"
+        android:drawablePadding="25dp"
+        android:textColorHint="#d8d8d8"
+        android:layout_marginRight="50dp"
+        android:paddingLeft="15dp"
+
+        />
+
+
+    <TextView
+        android:text="@string/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/location_edittext"
+        android:layout_alignLeft="@+id/location_edittext"
+        android:layout_alignStart="@+id/location_edittext"
+
+        android:id="@+id/textView11"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"/>
+
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:layout_marginTop="15dp"
+        android:id="@+id/date_edittext"
+        android:background="#ffffff"
+        android:cursorVisible="true"
+        android:textCursorDrawable="@null"
+        android:textSize="15sp"
+        android:textColor="#333333"
+        android:drawablePadding="35dp"
+        android:textColorHint="#d8d8d8"
+
+        android:layout_below="@+id/textView11"
+        android:layout_alignLeft="@+id/textView11"
+        android:layout_alignStart="@+id/textView11"
+        android:layout_marginRight="50dp"
+        android:drawableRight="@drawable/date"
+        android:paddingRight="15dp"
+
+        />
+
+    <TextView
+        android:text="@string/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date_edittext"
+        android:layout_alignLeft="@+id/date_edittext"
+        android:layout_alignStart="@+id/date_edittext"
+        android:layout_marginTop="13dp"
+        android:id="@+id/textView12"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:text="@string/duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView12"
+        android:layout_alignRight="@+id/date_edittext"
+        android:layout_alignEnd="@+id/date_edittext"
+        android:id="@+id/textView13"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_marginTop="13dp"/>
+
+    <EditText
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:inputType="textPersonName"
+
+        android:ems="10"
+        android:id="@+id/duration_edittext"
+        android:background="#ffffff"
+        android:hint="@string/select_start_Time"
+        android:paddingLeft="15dp"
+        android:drawableRight="@drawable/arrowdown"
+        android:paddingRight="10dp"
+        android:layout_below="@+id/textView13"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="11dp"
+        />
+
+    <EditText
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:inputType="textPersonName"
+
+        android:ems="10"
+        android:id="@+id/starttime_edittext"
+        android:layout_alignTop="@+id/duration_edittext"
+        android:layout_alignLeft="@+id/textView12"
+        android:layout_alignStart="@+id/textView12"
+        android:background="#ffffff"
+        android:drawableRight="@drawable/arrowdown"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:hint="Select"
+        />
+
+    <TextView
+        android:text="@string/step_1"
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginStart="34dp"
+        android:id="@+id/textView7"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="@string/next_button"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/button"
+
+        android:background="@drawable/button_border"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/duration_edittext"
+        android:layout_alignLeft="@+id/starttime_edittext"
+        android:layout_alignStart="@+id/starttime_edittext" />
+
+
+</RelativeLayout>
